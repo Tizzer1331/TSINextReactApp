@@ -1,13 +1,15 @@
 import {useState} from 'react';
+import { useCharacterSheetStore } from "@/stores/CharacterDetails";
 
 
-function NameForm({setName}){
+function NameForm(){
   const [newName, setNewName]= useState("");
+  const {changeName,characterSheet} = useCharacterSheetStore(state=>state)
   const handleSubmit = (event: React.SyntheticEvent) => {
       event.preventDefault();
-      setName(newName)
+      changeName(newName)
       console.log(newName)
-      alert('The Name you entered was: ' + newName) 
+      // alert('The Name you entered was: ' + characterSheet.name) 
     }
   return(
     <form onSubmit={handleSubmit} data-testid="NameInputTextBox" >
@@ -24,12 +26,15 @@ function NameForm({setName}){
   )
 }
 
-function ProfessionForm({setProfession}){
+
+
+function ProfessionForm(){
   const [newProfession, setNewProfession]=useState("")
+  const {changeProfession,characterSheet}=useCharacterSheetStore(state=>state)
   const handleSubmit = (event: React.SyntheticEvent) => {
-      event.preventDefault();
-      setProfession(newProfession)
-     
+    event.preventDefault();
+    changeProfession(newProfession)
+    console.log(characterSheet.profession) 
     } 
   return(
     <form onSubmit={handleSubmit}>
@@ -48,7 +53,6 @@ function ProfessionForm({setProfession}){
   )
 
 }
-
 
 
 

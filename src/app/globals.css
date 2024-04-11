@@ -12,7 +12,7 @@
 #D8973C */
 
 
-.background{
+  .background{
   background-color: #4A314D;
   }
   .titleSpeech{
@@ -26,14 +26,19 @@
     box-shadow: 10px 10px 5px #6B6570;
   }
   .flavourText{
-    background-color: #1A090D;
-    color: #D8973C;
-    padding: 10px;
-    width: 50%;
-    text-align: center;
-    margin: auto;
-  } 
-  .treasureImg{
+     
+  /* background-image: url("https://image.similarpng.com/very-thumbnail/2022/02/Old-blank-antique-scroll-paper-isolated-on-transparent-background-PNG.png");
+  background-size: cover; */
+  display:flex;
+  background-color: #1A090D;
+  color: #D8973C;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  }
+
+  .storyImage{
     display:block; 
     margin-left: auto;
     margin-right: auto;
@@ -42,6 +47,8 @@
     padding-top: 4px;
     padding-left: 4px;
     background-color: #D8C99D;
+    width: 450px;
+    height: 450px;
   }
    
   .Ui{
@@ -58,3 +65,27 @@
     text-align: center;
     margin: auto;
   } 
+
+  .scrollText{
+     
+    background-image: url("https://st5.depositphotos.com/1006269/62549/i/450/depositphotos_625492668-stock-photo-old-mediaeval-paper-sheet-parchment.jpg");
+    background-size: cover;
+    display:flex;
+    background-color: #1A090D;
+    color: #000000;
+    padding: 10px;
+    padding-left: 300px;
+    padding-top: 600px;
+    width: 80%;
+    height: 100vh;
+    text-align: center;
+    margin: auto;
+    font-size:larger;
+    background-color: #4A314D;
+    box-shadow: 0 0 50px 50px #302f2f;
+  }
+  
+  .blurBox{
+    background-color: #4A314D;
+    box-shadow: 0 0 5px 10px #4A314D;
+  }

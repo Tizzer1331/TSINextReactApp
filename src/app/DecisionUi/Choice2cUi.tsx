@@ -1,3 +1,4 @@
+import Image from "next/image"
 function Choice2cSuccessUi(){
     return(
 <p data-testid="UiTest5">
@@ -13,13 +14,16 @@ You approach a Cave mouth light one of the few torches you have left and head in
 
 function Choice2cFailUi(){
     return(
+        <div>
 <p data-testid="UiTest6">
 You follow the road down towards Hounds Tooth, the bright summer day lightening your spirits after the previous events. 
 The walk is easy and bar the pack weighing you down it is enjoyable.
 As the late afternoon sun starts to drift to the horizon you realise it&apos;s unlikely that you&apos;ll reach your destination before Nightfall and it is rumoured there is a Manticores in this forest.
 As if by magic your hear a deafening Roar, you spin drawing your sword and come face to face with a Manticore.
-You swing Hoping for a quick fight but it swipes across knocking your sword away. You dive for the tree line and scramble to escape.
+You swing hoping for a quick fight but it swipes across knocking your sword away. You dive for the tree line and scramble to escape.
 </p>
+<img className="storyImage" src="hhttps://goggleofhindsight.files.wordpress.com/2019/09/manticore-photo.jpg" alt="Manticore" />
+</div>
 )}
 
 export{Choice2cSuccessUi,Choice2cFailUi}

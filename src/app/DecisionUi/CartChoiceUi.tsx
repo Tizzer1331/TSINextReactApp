@@ -14,7 +14,7 @@ function CartChoice1FailUi(){
 <p data-testid="UiTestCartB">
     You rush through the forest, cutting yourself on brambles and branches rushing to the sound of voices and screaming as fast as you can. You finally breach into a clearing 
     out of breath, just as a group of Forest Goblins finish killing who you can only presume is the cart owner. They turn to you , sneers of malicious glee playing across their
-    faces. You turn to run, but they fall upon you so you turn to fight. It&apos;s a hard fight but you dispatch them, you head back to the cart tired and worn and see what you can use
+    f.aces. You turn to run, but they fall upon you so you turn to fight. It&apos;s a hard fight but you dispatch them, you head back to the cart tired and worn and see what you can use
     but the cart has been ransacked fully; nothing has been left bar a few rotten hunks of bread.
 </p>
 

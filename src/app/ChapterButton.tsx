@@ -7,3 +7,11 @@ return(
     </Link>
 )
 }
+
+export function CharacterSheetButton(name:string){
+return(
+<Link href = {`/CharacterSheet/${name}`} passHref>
+<button>Character Sheet</button>
+</Link>
+)
+}
