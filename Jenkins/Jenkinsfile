@@ -29,5 +29,13 @@ pipeline{
                 git branch: 'main', url:'https://github.com/Tizzer1331/TSINextReactApp.git'
             }
         }
+        
+        stage('Summon the Elector Counts'){
+            steps{
+                sshagent (credentials: ['JonSSHloginssssshhhhhh']) {
+                    ssh -o StrictHostKeyChecking=no ubuntu@13.41.198.172 'git clone https://github.com/Tizzer1331/TSINextReactApp.git && cd TSINextReactApp && npm ci && npm run dev'
+                }
+            }
+        }
     }
 }
