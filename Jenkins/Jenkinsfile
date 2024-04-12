@@ -9,7 +9,6 @@ pipeline{
                 sh 'rm -rf TSINextReactApp'
             }
         }
-
         stage ('Setup'){
             steps{
             sh 'npm install'
