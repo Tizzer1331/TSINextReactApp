@@ -28,7 +28,7 @@ pipeline{
         stage('Summon the Elector Counts'){
             steps{
                 sshagent (credentials: ['JonSSHloginssssshhhhhh']) {
-                   sh("ssh -o StrictHostKeyChecking=no ubuntu@13.41.198.172 'rm -rf TSINextReactApp && git clone https://github.com/Tizzer1331/TSINextReactApp.git && cd TSINextReactApp && npm ci && npm run dev'")
+                   sh("ssh -o StrictHostKeyChecking=no ubuntu@13.41.198.172 'rm -rf TSINextReactApp && git clone https://github.com/Tizzer1331/TSINextReactApp.git && cd TSINextReactApp && npm ci && sudo npm run dev -- -p 80 -H 0.0.0.0'")
                 }
             }
         }
