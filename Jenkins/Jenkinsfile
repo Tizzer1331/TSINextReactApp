@@ -9,6 +9,14 @@ pipeline{
                 sh 'rm -rf TSINextReactApp'
             }
         }
+        stage ('Sonar Cube Stuff'){
+            steps{
+                def scannerHome = tool 'SonarQube';
+                withSonarQubeEnv(JonSonarCloudCosImUnique){
+                    sh "${scannerHome}/bin/sonar-scanner"
+                }
+            }
+        }
         stage ('Setup'){
             steps{
             sh 'npm install'
