@@ -16,7 +16,7 @@ pipeline{
         }
         stage ('Build'){
         steps{
-        git clone: 'main', 'https://github.com/Tizzer1331/TSINextReactApp.git'
+        git clone: 'main', url:'https://github.com/Tizzer1331/TSINextReactApp.git'
             }
         }
     }
