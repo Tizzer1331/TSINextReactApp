@@ -14,7 +14,7 @@ pipeline{
                 script {
                     scannerHome = tool "SonarQube"
                 }
-                withSonarQubeEnv(JonSonarCloudCosImUnique){
+                withSonarQubeEnv('JonSonarCloudCosImUnique'){
                     sh "${scannerHome}/bin/sonar-scanner"
                 }
             }
