@@ -11,10 +11,12 @@ pipeline{
         }
         stage ('Sonar Cube Stuff'){
             steps{
-                def scannerHome = tool 'SonarQube';
+                script {
+                    scannerHome = tool "SonarQube"
+                }
                 withSonarQubeEnv(JonSonarCloudCosImUnique){
                     sh "${scannerHome}/bin/sonar-scanner"
-                }
+                }.
             }
         }
         stage ('Setup'){
