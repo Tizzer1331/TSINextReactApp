@@ -4,9 +4,15 @@ pipeline{
         nodejs "NodeJS"
         }
     stages{
-        stage ('Build'){
+
+
+        stage ('Setup'){
             steps{
             sh 'npm install'
+            }
+        stage ('Build')
+        steps{
+        git clone: 'main', 'https://github.com/Tizzer1331/TSINextReactApp.git'
             }
         }
     }
