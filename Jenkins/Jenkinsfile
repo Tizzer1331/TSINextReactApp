@@ -16,17 +16,17 @@ pipeline{
                 }
                 withSonarQubeEnv(JonSonarCloudCosImUnique){
                     sh "${scannerHome}/bin/sonar-scanner"
-                }.
+                }
             }
         }
         stage ('Setup'){
             steps{
-            sh 'npm install'
+                sh 'npm install'
             }
         }
         stage ('Build'){
-        steps{
-        git branch: 'main', url:'https://github.com/Tizzer1331/TSINextReactApp.git'
+            steps{
+                git branch: 'main', url:'https://github.com/Tizzer1331/TSINextReactApp.git'
             }
         }
     }
