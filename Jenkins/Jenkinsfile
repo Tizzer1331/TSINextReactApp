@@ -4,7 +4,11 @@ pipeline{
         nodejs "NodeJS"
         }
     stages{
-
+        stage('Cleanup before Install'){
+            steps{
+                sh 'rm -rf TSINextReactApp'
+            }
+        }
 
         stage ('Setup'){
             steps{
